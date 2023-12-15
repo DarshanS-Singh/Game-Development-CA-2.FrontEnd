@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Play Precision Pursuit</title>
+  <link rel="stylesheet" href="1styles.css">
+</head>
+
+<audio id="gunshotSound">
+  <source src="GunShotSnglFireIn PE1097304.mp3" type="audio/mpeg">
+</audio>
+<body>
+  <div class="fullBody">
+    <div class="header">
+      <div class="moreInfo">
+        <h2><span style="color: orangered;">Y</span>our score:</h2>
+        <h2 id="score" style="color: orangered;">0</h2>
+      </div>
+      <div class="moreInfo">
+        <h2><span style="color: orangered;">T</span>ime Left:</h2>
+        <h2 id="time-left" style="color: orangered;">60</h2>
+      </div>
+    </div>
+    <div class="allSquaresInAaDiv">
+      <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button class="refresh" style="margin-bottom: 50px;" id="goToHome">GO HOME</button>
+    <button class="refresh" id="refreshButton">RE-START</button>
+    <button class="refresh" style="margin-bottom: 550px; width: 180px;" id="levelUp">Difficulty +</button>
+    <button class="refresh" style="margin-bottom: 500px; width: 180px;" id="levelDown">Difficulty -</button>
+  </div>
+
+</body>
+<script src="1app.js"></script>
+
+</html>

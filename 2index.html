@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Pursuit</title>
+    <link rel="stylesheet" href="2styles.css">
+</head>
+<body>
+    <audio id="bgMusic" autoplay loop>
+        <source src="RulesOfEngagement.mp3" type="audio/mpeg">
+    </audio>
+    <div class="FulBody">
+        <div class="heading">
+            <h1><span style="color: orangered;">W</span>ELCOME TO PRECISION PURSUIT<span style="color: orangered;">!</span></h1>
+        </div>
+        <div class="content">
+            Ready to test your precision aiming skills? This game is all about mastering your mouse <span style="color: orangered; ">accuracy</span>.
+        </div>
+        <div class="information">
+            Get ready to test your skills with five different difficulty settings. Increase the challenge and aim for the title of a pro by <br> raising the difficulty level. Can you conquer the highest difficulty and prove yourself as a master <span style="color: orangered;">player? </span>
+        </div>
+        <div class="rules">
+            No formal rules here! Just hit those targets every time and watch your score soar. Keep an eye on the ticking <span style="color: orangered; font-size: 1.2rem;">timer</span>!
+        </div>
+        <div class="start">
+            <button id="startgame">START</button>
+        </div>
+<script>
+    document.getElementById('startgame').addEventListener('click', function() {
+      window.location.href = "1index.html";
+    });
+    window.onload = function() {
+        const bgMusic = document.getElementById('bgMusic');
+        bgMusic.play();
+      };
+</script>
+</body>
+</html>

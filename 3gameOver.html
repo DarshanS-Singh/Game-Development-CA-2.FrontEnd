@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME OVER</title>
+    <style>
+        body {
+            background-color: rgb(25, 25, 25);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .raTT {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 40px;
+            width: 60%;
+            max-width: 500px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.244); /* Semi-transparent background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the box */
+        }
+
+        .ping {
+            margin: 10px 0;
+            color: orangered;
+        }
+
+        .scoreWas span {
+            color: orangered;
+        }
+
+        .playAgain button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(18, 18, 18);
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            color: orangered;
+        }
+
+        .playAgain button:hover {
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+    <audio id="bgMusic2" autoplay loop>
+        <source src="Berserk soundtrack - 4 Gatsu.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+    <div class="raTT">
+        <h1 class="ping">GAME OVER!</h1>
+        <div class="scoreWas">
+            <h1>Your score was: <span class="resultScore"></span></h1>
+        </div>
+        <div class="comment1">
+            <h2 >You performed excellently!</h2>
+        </div>
+        <div class="playAgain">
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+        const bgMusic2 = document.getElementById('bgMusic2');
+        bgMusic2.play();
+      };
+
+    const finalScore = localStorage.getItem('finalScore');
+    let myFinalSc = document.querySelector('.resultScore'); 
+    myFinalSc.textContent = finalScore;
+
+    document.getElementById('playAgain').addEventListener('click', function() {
+         window.location.href = "2index.html";
+        });
+
+    let bidi = document.getElementsByClassName('comment1')[0];
+
+    if (finalScore >= 0 && finalScore <= 14) {
+        bidi.textContent = "That was a shame";
+    } else if (finalScore >= 15 && finalScore <= 29) {
+        bidi.textContent = "Below average. Strive for better results.";
+    } else if (finalScore >= 30 && finalScore <= 44) {
+        bidi.textContent = "Mediocre. Aim higher for excellence.";
+    } else if (finalScore >= 45 && finalScore <= 59) {
+        bidi.textContent = "Fair. More effort can yield better outcomes.";
+    } else {
+        bidi.textContent = "Now that's what we call a score";
+    }
+
+</script>
+</html>

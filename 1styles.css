@@ -1,0 +1,101 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #2f2d2d;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("https://imgs.search.brave.com/I1Mpp907AYLrAo9PCQJ46s5539sZopTI72iC-nxP5Bk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzY3Lzc2Lzg4/LzM2MF9GXzI2Nzc2/ODgzNl96cEpKeTV2/QUk3SFJPT2RCTHZB/eXBqTnN5T0RwMjBt/ci5qcGc"); */
+}
+
+.class{
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: rgb(18, 18, 18);
+}
+
+.moreInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.fullBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.allSquaresInAaDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+	width: 600px;
+	height: 600px;
+	display: flex;
+	flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.square {
+	height: 180px;
+	width: 180px;
+    background-color: rgb(26, 26, 26);
+	border:  5px solid black ;
+}
+
+.mole {
+	background-image: url("https://imgs.search.brave.com/NV0_6kV-exHvPHFWwJwmQ3aU6EQmNeKN4wPv4oI6wVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbW9sZS1kaWdn/aW5nLW91dC1kaXJ0/LWFuaW1hbC1jYXJ0/b29uLWNoYXJhY3Rl/cl83NDY2OS0yODku/anBnP3NpemU9NjI2/JmV4dD1qcGc");
+    background-color: rgb(82, 80, 80);
+    background-image: url("https://imgs.search.brave.com/FjhrdD-exjCBNhtt2H8fSFZbEhRWMn50YTDrW5pTKZ8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvbGF3LWFuZC1q/dXN0aWNlLTItNC80/OC83NS0xMjgucG5n");
+	background-size: cover;
+    /* border: 4px solid rgb(115, 31, 0); */
+}
+
+.refresh{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+#levelUp{
+    margin-bottom: 60px;
+}
+
+#levelDown{
+    margin-bottom: 80px;
+}
+
+.refresh:hover {
+    background-color: orangered;
+}
+
+.square:hover{
+    background-color: black;
+}
+
+.mole:hover{
+    background-color: rgb(48, 48, 48);
+}
+
+
